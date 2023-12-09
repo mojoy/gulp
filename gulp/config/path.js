@@ -7,11 +7,11 @@ const srcFolder = `./src`; // путь к исходникам
 
 export const path = {
     build: {
-        html: `${srcFolder}/`,
+        html: `${buildFolder}/`,
         files: `${buildFolder}/files/`
     },
     src: {
-        html: `${srcFolder}/files/*.html`,
+        html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
     },
     watch: {
