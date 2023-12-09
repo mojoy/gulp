@@ -1,0 +1,26 @@
+p {
+    margin: 0 0 15px;
+}
+
+.nav {
+
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+
+    &__item {
+        margin: 0;
+    }
+
+    &__link {
+        color: red;
+
+        &:hover {
+            background: red
+        }
+    }
+}
