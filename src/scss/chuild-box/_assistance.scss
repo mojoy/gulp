@@ -1,0 +1,60 @@
+.assistance {
+
+	padding: 20px 0 0;
+	margin: 0 0 20px;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		font-weight: bold;
+		font-size: 0.88rem;
+		margin: 0 0 0.2rem;
+		display: flex;
+	}
+
+	&-doctor {
+
+		&__img-link {
+			text-decoration: none;
+		}
+
+		&__img {
+			display: block;
+			margin: 0 !important;
+			border-radius: 50%;
+
+			&-link {
+				margin: 0 15px 0 0;
+			}
+		}
+	}
+
+	&-text {
+		width: 100%;
+		padding: 5px 0;
+	}
+
+	&__doctor-name {
+		color: #000 !important;
+		font-weight: 500 !important;
+		font-style: normal;
+		font-size: 1.05rem;
+		display: inline-flex;
+		margin: 0 0 0.3rem;
+	}
+
+	&__doctor-job {
+		display: block;
+		color: #333333;
+		font-size: 0.9rem;
+	}
+
+}
+.assistance-content {
+	display: flex;
+	align-items: center;
+	line-height: 1.25;
+	font-size: 14px;
+	padding: 1rem 0 0;
+	border-top: 1px solid #ff5274;
+}

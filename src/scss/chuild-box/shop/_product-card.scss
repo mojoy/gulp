@@ -1,0 +1,115 @@
+.product-card {
+
+    &__link {
+       background: #fff;
+       box-shadow: 0 2px 15px 0 rgba(166,191,207,0.5);
+       border-radius: 10px;
+       padding: 20px 25px;
+       font-size: 14px;
+       line-height: 1.4;
+       height: 100%;
+       display: flex;
+       align-content: space-between;
+       flex-flow: row;
+       justify-content: space-between;
+ 
+       @include res(c){
+          padding: 15px;
+       }
+ 
+       @include res(s){
+          font-size: 14px;
+       }
+ 
+       @include res(xs){
+          padding: 13px;
+          font-size: 13px;
+       }
+ 
+       &:hover {
+          border-color: #FFF;
+          z-index: 2;
+          box-shadow: 0 4px 40px 0 rgba(87,139,141,0.25);
+       }
+    }
+ 
+    &__left {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+ 
+    &__right {
+       width: 45%;
+       flex-shrink: 0;
+       padding: 0 0 0 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+ 
+    &__title {
+       margin: 0 0 10px;
+       font-size: 24px;
+ 
+       @include res(s){
+          font-size: 21px;
+       }
+ 
+       @include res(xs){
+          margin: 0 0 5px;
+          font-size: 18px;
+          font-weight: 700;
+       }
+ 
+       @include res(xxs){
+         font-size: 17px;
+       }
+    }
+ 
+    &__description {
+       display: flex;
+       margin:  0 0 13px;
+ 
+       @include res(xxs){
+          margin: 0 0 8px;
+       }
+    }
+ 
+    &__images {
+       display: block;
+       width: auto;
+       height: auto;
+       max-width: 100%;
+       margin: 0 auto 10px;
+    }
+ 
+    &__row-button {
+       display: flex;
+       justify-content: center;
+    }
+ 
+    &__button {
+       padding-left: 25px;
+       padding-right: 25px;
+ 
+       @include res(xs){
+          padding-left: 20px;
+          padding-right: 20px;
+       }
+    }
+ 
+ }
+
+ .pc-cost {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    font-weight: bold;
+ 
+    &__value {
+       padding: 0 8px 0 0;
+    }
+ }
+
+

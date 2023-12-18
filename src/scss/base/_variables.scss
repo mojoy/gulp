@@ -1,0 +1,40 @@
+$container_width: 1330px;
+$gutter: 15px;
+
+$breakpoints: (
+	'xxl': (max-width: 1680px),
+	'xl': (max-width: 1450px),
+	'c': (max-width: $container_width),
+	'l': (max-width: 1024px),
+	'm': (max-width: 768px),
+	's': (max-width: 680px),
+	'xs': (max-width: 480px),
+	'xxs': (max-width: 375px),
+);
+
+//$font: 'PF DinDisplay Pro', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+$font: 'Noto Sans', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+$font-icon: 'smileicons' !important;
+
+
+$shadow-block: 0 2px 15px 0 transparentize(#a6bfcf,0.5);
+$shadow-block-big: 0 3px 35px 0 transparentize(#a6bfcf,0.3);
+$shadow-panels: 0 4px 40px 0 rgba(#578B8D,0.25);
+
+$pink: #ff5274;
+$green: #72dbd4;
+$green-dark: #239ca3;
+$green-light: #d5f4f4;
+$black: #000000;
+$text-all: #3D4A60;
+$text-dark-grey: #546B8B;
+$bg-color: #f8fbfc;
+$gray-text: #7b90a1;
+//$gray-text: #9ab5ca;
+$gray-border: #cedae1;
+$gray-bg: #e6eff6;
+$green-bg: #eefafc;
+$icons-gray-blue: #9AB5CA;
+$icons-blue: #72DBD4;
+$bg-green-triggers: #CBEDEF;
+$all-blue: #ECF4F9;

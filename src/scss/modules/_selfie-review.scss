@@ -1,0 +1,73 @@
+.selfie-review{
+	display: block;
+	position: relative;
+	background: #FFF;
+	border-radius: 200px 200px 10px 10px;
+	padding: 12px 12px 40px 12px;
+	width: 264px;
+	max-width: 100%;
+	min-height: 400px;
+	text-align: center;
+	transition: all 0.3s ease;
+
+	&:hover{
+		box-shadow:  0 4px 16px 0 rgba(#578B8D,0.25);
+		.btn-round-icon{
+			background: #ff5274;
+			transform: scale3d(1.5, 1.5, 1);
+		}
+	}
+
+	.btn-round-icon{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -20px;
+		margin: 0 auto;
+	}
+}
+
+.selfie-review__photo{
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
+.selfie-review__title{
+	display: block;
+	padding: 0 3px;
+	margin-bottom: 3px;
+}
+
+.selfie-review__descr{
+	display: block;
+	color: $text-dark-grey;
+	padding: 0 3px;
+}
+
+
+//selfie-review-slider
+.selfie-review-slider{
+	.swiper-slide{
+		padding: 10px 10px 30px 10px;
+		display: flex;
+		height: auto;
+	}
+
+	.selfie-review{
+		margin-left: auto;
+		margin-right: auto;
+		min-height: initial;
+	}
+
+	.slider-arrow--prev{
+		left: 12px;
+	}
+
+	.slider-arrow--next{
+		right: 12px;
+	}
+}
+//selfie-review-slider

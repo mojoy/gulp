@@ -1,0 +1,40 @@
+
+
+
+
+
+
+.xdsoft_datetimepicker {
+
+   box-shadow: 0 3px 35px 0 rgba(166,191,207,0.7) !important;
+   border-radius: 20px !important;
+   padding: 15px 20px !important;
+/*
+   &::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      bottom: 10px;
+      right: 10px;
+      border: 1px solid #72dbd4;
+      border-radius: 15px;
+      z-index: 1;
+      transition: all 0.2s ease;
+      pointer-events: none;
+   }
+*/
+}
+.xdsoft_datetimepicker .xdsoft_calendar td > div {
+   padding-right: 0 !important;
+}
+.pb .xdsoft_datetimepicker .xdsoft_calendar td,
+.pb .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+
+   transition: all 0.3s ease;
+
+   &:hover {
+      background: #ff5275 !important;
+   }
+
+}

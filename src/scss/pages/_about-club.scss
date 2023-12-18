@@ -1,0 +1,46 @@
+//s-club-bottom
+.s-club-bottom{
+	min-height: 780px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	padding: 120px 0;
+	@include res(xl){
+		min-height: 500px;
+	}
+	@include res(l){
+		min-height: initial;
+		padding: 40px 0;
+	}
+	@include res(m){
+		padding-bottom: 65%;
+		background-size: 150% auto;
+		background-position: right bottom;
+	}
+}
+
+.club-bottom{
+	max-width: 45%;
+	@include res(m){
+		max-width: 100%;
+	}
+
+	.h1{
+		margin-bottom: 0.5em;
+	}
+}
+//s-club-bottom
+
+
+//about-cases-slider
+.about-cases-slider{
+	box-shadow: $shadow-panels;
+	border-radius: 15px;
+	border-bottom: 7px solid $green;
+
+	.about-case{
+		box-shadow: none;
+		border-bottom: none;
+	}
+}
+//about-cases-slider

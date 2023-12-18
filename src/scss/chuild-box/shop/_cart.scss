@@ -1,0 +1,267 @@
+.c-main {
+	@include res(l){
+		margin: 0 -15px;
+		padding: 0 15px;
+		overflow: hidden;
+	}
+
+	&__items {
+		margin: 0 0 40px;
+		line-height: 1.4;
+
+		@include res(s){
+			margin: 0 0 30px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		&:last-child {
+			margin: 30px 0 0;
+		}
+
+		&--remove {
+			background: rgb(250, 70, 70);
+			position: relative;
+
+			&:after {
+				width: 30px;
+				height: 30px;
+				right: 5px;
+				position: absolute;
+				z-index: 1;
+				content: "";
+				top: 50%;
+				margin: -15px 0 0;
+				background: url('../images/shop/icons/basket.svg');
+			}
+		}
+	}
+ 
+	&__item-inner {
+	   display: flex;
+	   flex-direction: row;
+	   border-bottom: 1px solid #e5edf2;
+	   padding: 18px 20px 18px 0;
+	   align-items: center;
+	   position: relative;
+	   background:#f8fbfc;
+	   z-index: 3;
+
+	   @include res(s){
+		  flex-direction: column;
+		  padding: 18px 0;
+	   }
+
+	}
+ 
+	&__item-left {
+	   width: 60%;
+	   display: flex;
+	   flex-direction: row;
+ 
+	   @include res(l){
+		  width: 55%;
+	   }
+ 
+	   @include res(s){
+		  width: 100%;
+		  margin: 0 0 20px;
+	   }
+	}
+ 
+	&__item-right {
+	   width: 40%;
+	   display: flex;
+	   flex-direction: row;
+	   margin: 0 0 0 auto;
+ 
+	   @include res(l){
+		  width: 45%;
+	   }
+ 
+	   @include res(s){
+		  width: 100%;
+	   }
+	}
+ 
+	&__image {
+	   width: 90px;
+	   padding: 0 10px;
+	   flex-shrink: 0;
+	}
+ 
+	&__photo {
+	   display: block;
+	   max-width: 100%;
+	   height: auto;
+	   width: auto;
+	   box-shadow: 0 3px 23px 0 rgba(166,191,207,0.7);
+	   border-radius: 5px;
+	}
+ 
+	&__title {
+	   font-size: 18px;
+	   font-weight: bold;
+	   padding: 0 10px;
+	   display: flex;
+	   align-items: center;
+ 
+	   @include res(s){
+		  font-size: 16px;
+	   }
+	}
+ 
+	&__quantity {
+	   width: 40%;
+	   padding: 0 10px;
+
+	   .quantity {
+			justify-content: left;
+	   }
+	}
+ 
+ }
+ 
+ .c-main-cost {
+	width: 60%;
+	padding: 0 10px;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+ 
+	@include res(s){
+	   font-size: 17px;
+	}
+ 
+	@include res(xxs){
+	   font-size: 19px;
+	}
+ 
+	&__value {
+	   padding: 0 7px 0 0;
+	   width: 60%;
+	   text-align: right;
+	}
+ 
+	&__text {
+	   font-size: 17px;
+	   font-weight: normal;
+ 
+	   @include res(xxs){
+		  font-size: 16px;
+	   }
+	}
+ }
+ 
+ .total-cart {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	font-weight: bold;
+	align-items: first baseline;
+ 
+	@include res(m){
+	   font-size: 18px;
+	}
+ 
+	&__value {
+	   padding: 0 10px 0 0;
+	}
+ 
+	&__text {
+ 
+	   strong {
+		  font-size: 24px;
+		  padding: 0 5px 0 0;
+	   }
+	}
+ }
+ 
+ .c-main .total-cart {
+	width: 100%;
+	font-size: 19px;
+	padding: 0 20px 0 0;
+
+	@include res(s){
+		padding: 0;
+	}
+ 
+	.total-cart__value {
+	   width: 40%;
+	   text-align: right;
+	   padding-right: 7px;
+	}
+ 
+	.total-cart__text {
+	   width: 40%;
+	   padding: 0 10px;
+	   text-align: right;
+	}
+ 
+ }
+
+ .c-total {
+	margin: 0 0 30px;
+	display: flex;
+	flex-direction: column;
+
+	@include res(m){
+		margin-bottom: 20px;
+	}
+
+	&__item {
+	   display: flex;
+	   justify-content: flex-end;
+	   flex-wrap: wrap;
+	   margin: 0 0 15px;
+	}
+
+	.button {
+		margin: 0 0 15px 20px;
+	}
+}
+ 
+.basket {
+	margin: 0 0 0 20px;
+	display: flex;
+	position: relative;
+ 
+	&__value,
+	&__value_top {
+	   position: absolute;
+	   right: -0.5em;
+	   top: -0.3em;
+	   width: 20px;
+	   height: 20px;
+	   font-size: 12px;
+	   border-radius: 50%;
+	   background: #f04e6e;
+	   color: #fff;
+	   text-align: center;
+	   line-height: 20px;
+	}
+ 
+	path {
+	   fill: #249da3;
+	}
+ }
+
+.btn-remove-position {
+	position: absolute;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin: -12px 0 0;
+
+	@include res(l){
+		display: none;
+	 }
+  }

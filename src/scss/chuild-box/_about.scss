@@ -1,0 +1,15 @@
+.about-nav-panels--1 {
+   .about-nav-panel {
+      margin-top: 0;
+      min-height: auto;
+      height: 100%;
+
+      &__img {
+         margin-bottom: 10px;
+      }
+   }
+
+   &.row [class*="grid"] {
+      padding-bottom: 35px;
+   }
+}

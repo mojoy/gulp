@@ -1,0 +1,83 @@
+.regions-banner{
+	display: block;
+	position: relative;
+	background: url("../img/regions-block-bg.webp") right bottom no-repeat #36dbe3;
+	min-height: 420px;
+	border-radius: 20px;
+	box-shadow: $shadow-block-big;
+	padding: 30px;
+	@include res(l){
+		background-size: 100% auto;
+		background-position: 50px bottom;
+	}
+	@include res(m){
+		padding: 20px;
+		min-height: 320px;
+	}
+	@include res(s){
+		padding-bottom: 65%;
+		background-size: 170% auto;
+		background-position: right bottom;
+	}
+}
+
+.regions-banner__content{
+	position: relative;
+	z-index: 2;
+	max-width: 500px;
+	color: #FFF;
+}
+
+.regions-banner__title{
+	margin-bottom: 10px;
+}
+
+.regions-banner__descr{
+	font-size: 18px;
+	margin-bottom: 20px;
+	@include res(s){
+		font-size: 16px;
+	}
+}
+
+.regions-banner__btn{
+	margin-top: 40px;
+	width: 280px;
+	max-width: 100%;
+	@include res(s){
+		margin-top: 20px;
+	}
+}
+
+.regions-banner__link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+
+
+.regions-banner__phone{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+
+	small{
+		display: block;
+		color: $text-all;
+		font-size: 16px;
+	}
+
+	a{
+		font-weight: bold;
+		font-size: 24px;
+		white-space: nowrap;
+	}
+}

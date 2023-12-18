@@ -1,0 +1,39 @@
+//romb-icon-block
+.romb-icon-blocks-wall{
+	margin-bottom: -30px;
+
+	.romb-icon-block{
+		max-width: 550px;
+		margin-bottom: 30px;
+	}
+}
+
+.romb-icon-block{
+	position: relative;
+	padding-left: 30px;
+
+	&:before{
+		content: '';
+		width: 14px;
+		height: 14px;
+		border-radius: 4px;
+		background: $text-all;
+		transform: rotate(45deg);
+		position: absolute;
+		left: 0;
+		top: 0.4em;
+	}
+}
+
+.romb-icon-block--gray{
+	&:before{
+		background: $icons-gray-blue;
+	}
+}
+
+.romb-icon-block--pink{
+	&:before{
+		background: $pink;
+	}
+}
+//romb-icon-block

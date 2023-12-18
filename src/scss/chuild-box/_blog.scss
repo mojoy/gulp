@@ -1,0 +1,49 @@
+.row-blog {
+	.ba-item {
+
+		margin: 0;
+		padding-bottom: 50px;
+		height: 100%;
+
+		&__panel {
+			overflow: hidden;
+			height: 100%;
+		}
+
+		&__photo-holder {
+			display: block;
+			overflow: hidden;
+		}
+
+		&__photo {
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+			display: block;
+		}
+
+		&__date {
+
+		}
+
+		&__text {
+			display: block;
+			padding: 0 0 10px;
+		}
+
+		&__content {
+			padding-bottom: 20px;
+		}
+
+
+
+		.button {
+			padding: 10px 0;
+			width: 80% !important;
+			margin: auto auto 0;
+		}
+
+	}
+
+
+}

@@ -1,0 +1,333 @@
+.consult-block{
+	position: relative;
+	overflow: hidden;
+	border-radius: 20px;
+	display: flex;
+	//box-shadow: $shadow-block-big;
+	background: linear-gradient(to right, #39e3ec, #279da3);
+	color: #FFF;
+	padding-right: 40px;
+	@include res(l){
+		padding-right: 20px;
+	}
+	@include res(m){
+		background: linear-gradient(to right, #34ced6, #279da3);
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px;
+		//text-align: center;
+	}
+
+	&:before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		background: url("../img/home/consult-squares.webp") right center no-repeat;
+		pointer-events: none;
+		z-index: 0;
+		@include res(m){
+			opacity: 0.25;
+		}
+	}
+}
+
+.consult-block--white{
+	background: linear-gradient(to right, #D8E3E7, #F5F9FA);
+	color: $text-all;
+
+	&:before{
+		content: '';
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		background: url("../img/blocks/consult-squares-dark.webp") right center no-repeat;
+		pointer-events: none;
+		z-index: 0;
+		@include res(m){
+			opacity: 0.25;
+		}
+	}
+}
+
+.consult-block__img{
+	position: relative;
+	z-index: 2;
+	align-self: flex-end;
+	width: 30%;
+	flex-shrink: 0;
+	text-align: center;
+	@include res(m){
+		order: 2;
+		align-self: center;
+		margin-top: 30px;
+		margin-bottom: -20px;
+		width: 100%;
+	}
+	@media (max-width: 850px) and (orientation: landscape) {
+		display: none;
+	}
+
+	img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.consult-block__center{
+	position: relative;
+	z-index: 2;
+	padding: 20px;
+	width: 500px;
+	flex-shrink: 1;
+	@include res(m){
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	.h2{
+		margin-bottom: 0.3em;
+		@include res(l){
+			font-size: 26px;
+		}
+
+		mark{
+			color: $pink;
+			text-transform: uppercase;
+			background: transparent;
+		}
+	}
+}
+
+.consult-block__center--full{
+	width: 70%;
+	flex-shrink: 0;
+	@include res(m){
+		width: 100%;
+		margin-bottom: 0;
+	}
+}
+
+.consult-block__descr{
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	@include res(l){
+		font-size: 16px;
+	}
+}
+
+.consult-block__descr--italic{
+	font-style: italic;
+}
+
+.consult-block__btn{
+	flex-shrink: 0;
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	align-self: center;
+	@include res(m){
+		align-self: flex-start;
+		margin-left: initial;
+	}
+	@include res(xs){
+		width: 100%;
+	}
+}
+
+.consult-block__phone{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 30px;
+	@include res(m){
+		margin: 0 30px 0 0;
+	}
+
+	&:last-child{
+		margin-right: 0;
+		@include res(m){
+			margin: 0 30px 0 0;
+		}
+	}
+
+	small{
+		display: block;
+		font-size: 16px;
+		color: $text-all;
+	}
+
+	a{
+		font-weight: bold;
+		font-size: 24px;
+		white-space: nowrap;
+	}
+}
+
+.consult-block__socials{
+	display: inline-flex;
+	align-items: center;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+	margin-right: 30px;
+	@include res(m){
+		margin: 0 15px 10px 0;
+	}
+
+	a{
+		margin-right: 15px;
+	}
+}
+
+.consult-block__name{
+	color: $text-all;
+	font-size: 16px;
+	
+	&--white{
+		color: #FFF;
+		margin-bottom: 10px;
+		@include res(m){
+			display: none;
+		}
+
+		.lead{
+			display: inline-block;
+			padding: 4px 10px;
+			background: $green-dark;
+			border-radius: 15px;
+		}
+	}
+}
+
+.consult-block__content{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	@include res(m){
+		display: block;
+	}
+}
+
+.consult-block--mini{
+	align-items: center;
+	padding-right: 15px;
+
+	.consult-block__center{
+		flex: 1;
+		width: auto;
+	}
+
+	.consult-block__descr{
+		font-size: 20px;
+		margin-bottom: 0;
+		@include res(xl){
+			font-size: 18px;
+		}
+	}
+
+	.consult-block__btn{
+		margin-left: auto;
+		@include res(xl){
+			padding: 10px;
+			font-size: 14px;
+		}
+	}
+}
+
+.consult-block__triggers{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	@include res(s){
+		flex-direction: column;
+	}
+}
+
+.consult-block__trigger{
+	width: calc(100% / 3);
+	flex-shrink: 0;
+	padding-right: 15px;
+	display: flex;
+	align-items: flex-start;
+	font-size: 18px;
+	@include res(xl){
+		font-size: 16px;
+	}
+	@include res(l){
+		font-size: 14px;
+	}
+	@include res(s){
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 10px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	img{
+		flex-shrink: 0;
+		margin-right: 10px;
+		width: 50px;
+		@include res(l){
+			width: 30px;
+		}
+	}
+
+	small{
+		display: block;
+		font-size: 14px;
+		color: $gray-text;
+		@include res(l){
+			font-size: 12px;
+		}
+	}
+}
+
+.consult-block__trigger__content{
+	margin-top: -5px;
+}
+
+.consult-block__simple-btn{
+	width: 250px;
+	max-width: 100%;
+	@include res(xs){
+		width: 100%;
+	}
+}
+
+.consult-block__rombs{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 20px 0 30px 0;
+	@include res(xl){
+		font-size: 14px;
+		margin: 20px 0;
+	}
+	@include res(s){
+		margin: 10px 0 20px 0;
+		flex-direction: column;
+	}
+
+	.romb-icon-block{
+		padding-right: 15px;
+		@include res(s){
+			margin-bottom: 15px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}

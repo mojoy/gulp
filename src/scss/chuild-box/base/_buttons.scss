@@ -1,0 +1,12 @@
+button {
+   -webkit-appearance: button;
+   appearance: button;
+   flex-shrink: 0;
+}
+
+
+.button {
+    &--disabled {
+        pointer-events: none;
+    }
+}

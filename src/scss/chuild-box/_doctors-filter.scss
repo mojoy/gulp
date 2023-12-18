@@ -1,0 +1,37 @@
+
+.doctors-filter {
+    padding: 0 20px 0 0;
+ 
+    &:nth-child(1) {
+       width: 35%;
+ 
+       @include res(m){
+          width: 100%;
+       }
+    }
+ 
+    &:nth-child(2) {
+       width: 30%;
+ 
+       @include res(m){
+          width: 100%;
+       }
+    }
+ 
+    &:nth-child(3) {
+       width: 35%;
+ 
+       @include res(m){
+          width: 100%;
+       }
+    }
+ 
+    @include res(m){
+       padding: 0;
+    }
+ 
+    &:last-child {
+       padding: 0;
+    }
+ }
+ 

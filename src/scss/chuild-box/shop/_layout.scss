@@ -1,0 +1,71 @@
+body.overlayed-shop {
+
+    @include res(l){
+       overflow: hidden;
+ 
+       &::before {
+          visibility: visible;
+          opacity: 1;
+       }
+    }
+ 
+ }
+
+ .container {
+    z-index: 6;
+ }
+
+ .s-def--shop {
+    padding: 25px 0 0;
+ 
+    @include res(m){
+       padding: 20px 0 0;
+    }
+ 
+    @include res(xs){
+       padding: 10px 0 0;
+    }
+ }
+ 
+.products-layout {
+
+    margin-bottom: 30px;
+ 
+    @include res(m) {
+       margin-bottom: 25px;
+    }
+ 
+    @include res(xs) {
+       margin-bottom: 10px;
+    }
+ 
+    > [class*="grid"] {
+       padding-bottom: 30px;
+ 
+       @include res(s) {
+          padding-bottom: 20px;
+       }
+ 
+       @include res(xs) {
+          padding-bottom: 20px;
+       }
+    }
+ 
+    &--short {
+       > [class*="grid"] {
+ 
+          @include res(c) {
+             &:nth-child(4) {
+                display: none;
+             }
+          }
+ 
+          @include res(m) {
+             &:nth-child(4) {
+                display: flex;
+             }
+          }
+ 
+       }
+    }
+ }

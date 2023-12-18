@@ -1,0 +1,257 @@
+//s-about-credit-begin
+.s-about-credit-begin{
+	background: linear-gradient(to bottom, $bg-color, #ECF4F9);
+	padding-top: 40px;
+}
+
+.s-about-credit-begin__img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.about-credit-begin-text{
+	background: $bg-color;
+	border-radius: 10px;
+	padding: 40px;
+	margin-top: -60px;
+	text-align: center;
+	@include res(xs){
+		margin-top: -30px;
+		padding: 20px 15px;
+	}
+
+	p{
+		margin-bottom: 0.5em;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+//s-about-credit-begin
+
+
+//about-credit-preim
+.about-credit-preims-wall{
+	margin-bottom: -70px;
+	@include res(s){
+		margin-bottom: -30px;
+	}
+
+	.about-credit-preim{
+		margin-bottom: 70px;
+		max-width: 490px;
+		margin-left: auto;
+		margin-right: auto;
+		@include res(s){
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.about-credit-preim{
+	display: flex;
+	align-items: flex-start;
+
+	img{
+		margin-right: 18px;
+		flex-shrink: 0;
+		width: 60px;
+	}
+
+	.text-20{
+		padding-top: 15px;
+		font-weight: bold;
+		margin-bottom: 20px;
+		@include res(s){
+			margin-bottom: 10px;
+		}
+	}
+}
+//about-credit-preim
+
+
+//s-about-credit-text
+.s-about-credit-text{
+	.sec-title-descr{
+		max-width: 1000px;
+		margin-bottom: 0;
+	}
+}
+//s-about-credit-text
+
+
+//about-credit-price
+.about-credit-price{
+
+	&+.btn-center{
+		padding-top: 35px;
+	}
+}
+
+.about-credit-price__tables{
+	.styled-table-wrapper{
+		display: none;
+
+		&.active{
+			display: block;
+		}
+	}
+}
+
+.about-credit-price__header{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	@include res(l){
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	.h2{
+		margin-right: 40px;
+		@include res(l){
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+	}
+
+	.select-like{
+		margin-left: auto;
+		min-width: 250px;
+		@include res(l){
+			margin-left: 0;
+		}
+	}
+}
+
+.about-credit-price__label{
+	background: $pink;
+	border-radius: 10px;
+	color: #FFF;
+	font-size: 20px;
+	padding: 2px 15px;
+	white-space: nowrap;
+	@include res(l){
+		margin-bottom: 15px;
+	}
+	@include res(xs){
+		font-size: 16px;
+	}
+}
+//about-credit-price
+
+
+//about-credit-steps
+.about-credit-steps{
+	margin-bottom: -40px;
+
+	.about-credit-step{
+		margin-bottom: 40px;
+	}
+}
+
+.about-credit-step{
+	font-size: 15px;
+
+	.lead-big{
+		margin-bottom: 0.5em;
+	}
+}
+
+.about-credit-step__head{
+	position: relative;
+	margin-bottom: 15px;
+
+	span{
+		color: $bg-green-triggers;
+		font-size: 72px;
+		line-height: 1;
+		font-weight: bold;
+		position: absolute;
+		top: 0;
+		left: 10px;
+		z-index: 2;
+	}
+}
+//about-credit-steps
+
+
+//s-about-credit-services
+.s-about-credit-services{
+	.user-content{
+		font-size: 15px;
+
+		.h2{
+			margin-bottom: 1em;
+		}
+
+		li{
+			margin-bottom: 2em;
+		}
+
+		.lead-big{
+			margin-bottom: 0.5em;
+		}
+	}
+}
+//s-about-credit-services
+
+
+//s-about-credit-docs
+.s-about-credit-docs{
+	.about-tech{
+		@include res(c){
+			height: 340px;
+			padding-top: 40px;
+			font-size: 14px;
+		}
+		@include res(l){
+			height: 300px;
+		}
+		@include res(xs){
+			height: auto;
+		}
+	}
+	.about-tech__content{
+		max-width: 46%;
+
+		.h2{
+			margin-bottom: 0.3em;
+			@include res(l){
+				font-size: 20px;
+			}
+		}
+	}
+}
+//s-about-credit-docs
+
+
+//credit-logo
+.credit-logos-slider__wrapper{
+	.slider-arrow{
+		top: 35px;
+	}
+}
+
+.credit-logo{
+	text-align: center;
+
+	img{
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	.text-14{
+		display: block;
+		line-height: 1.35;
+		@include res(l){
+			font-size: 12px;
+		}
+	}
+}
+//credit-logo

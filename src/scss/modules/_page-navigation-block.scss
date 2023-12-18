@@ -1,0 +1,11 @@
+.page-navigation-block{
+   @include res(l){
+		font-size: 14px;
+	}
+
+   .stars-list{
+      @include res(m){
+         margin-bottom: 0.5em;
+      }
+   }
+}

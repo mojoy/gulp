@@ -1,0 +1,289 @@
+label {
+	cursor: pointer;
+}
+
+.input-text {
+	display: inline-block;
+	font-family: $font;
+	font-size: 18px;
+	line-height: 1.3;
+	-webkit-appearance: none;
+	border: 1px solid #cedae1;
+	background: #FFF;
+	border-radius: 28px;
+	padding: 15px 25px;
+	overflow: visible;
+	margin: 0;
+	width: 100%;
+	@include res(l){
+		font-size: 16px;
+		padding: 12px 20px;
+	}
+
+	&--round{
+		border-radius: 28px;
+	}
+
+	&::placeholder {
+		font-size: 18px;
+		line-height: 1.3;
+		color: $gray-text;
+		font-style: italic;
+		opacity: 1;
+		transition: opacity 0.3s ease;
+		@include res(l){
+			font-size: 16px;
+		}
+	}
+
+	&:focus {
+		border: 1px solid $green-dark;
+		box-shadow: $shadow-block, 0 0 0 1px $green-dark;
+		outline: none;
+		&::placeholder {
+			opacity: 0.4;
+		}
+	}
+
+	&.danger{
+		border-color: $pink;
+		box-shadow: $shadow-block, 0 0 0 1px $pink;
+		background: #fff1f3;
+	}
+}
+
+//style-checkbox
+.style-checkbox {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+
+	input {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		&:checked + span {
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		&.error + span {
+			&:before {
+				border-color: #cc0000;
+			}
+		}
+	}
+
+	span {
+		display: block;
+		line-height: 1.3;
+		position: relative;
+		padding-left: 30px;
+
+		&:before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: #FFF;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: all 0.3s ease;
+		}
+
+		&:after {
+			content: '\e909';
+			font-family: $font-icon;
+			color: $pink;
+			font-size: 16px;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			left: 4px;
+			top: -2px;
+			z-index: 2;
+			opacity: 0;
+			transition: opacity 0.3s ease;
+		}
+
+		a {
+			color: #353434;
+		}
+	}
+}
+//style-checkbox
+
+
+//style-check-ios
+.style-check-ios {
+	position: relative;
+	display: block;
+	margin-top: 14px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.5;
+	transform: translate3d(0, 0, 0);
+
+	@include res(xs){
+		font-size: 14px;
+	}
+
+	&--small{
+		font-size: 12px;
+	}
+
+	input {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		&:checked {
+			& + span {
+				&:before {
+					background: $pink;
+				}
+				&:after {
+					transform: translate(24px, 0);
+				}
+			}
+		}
+		&.danger {
+			& + span {
+				&:before {
+					box-shadow: $shadow-block, 0 0 0 2px $pink;
+					background: #fff1f3;
+				}
+			}
+		}
+	}
+
+	span {
+		position: relative;
+		display: block;
+		padding-left: 60px;
+		user-select: none;
+		text-align: left;
+		color: $text-dark-grey;
+		&:before {
+			content: '';
+			width: 50px;
+			height: 26px;
+			border-radius: 21px;
+			position: absolute;
+			left: 0;
+			top: -2px;
+			transition: all 0.3s ease;
+			background: #b4b4b4;
+			transform: translate3d(0, 0, 0);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			left: 2px;
+			top: 0;
+			width: 22px;
+			height: 22px;
+			border-radius: 50%;
+			background: #fff;
+			transition: transform 0.3s ease;
+			z-index: 2;
+		}
+	}
+
+	a {
+		color: $pink;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $green;
+		}
+	}
+}
+//style-check-ios
+
+
+//checkbox-btn
+.checkbox-btn {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+
+	&:hover{
+		span{
+			border-color: $green;
+			color: $green-dark;
+		}
+	}
+
+
+	input {
+		opacity: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		&:checked + span {
+			border-color: $green;
+			background: $green;
+			color: #FFF;
+		}
+	}
+
+	span {
+		display: block;
+		line-height: 1.3;
+		position: relative;
+		font-size: 14px;
+		color: $gray-text;
+		padding: 1em 1.5em;
+		border: 1px solid $gray-text;
+		border-radius: 40px;
+		transition: all 0.3s ease;
+	}
+}
+//checkbox-btn
+
+
+//vertical-form
+.vertical-form{
+	textarea{
+		display: block;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.input-text{
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.button{
+		width: 100%;
+	}
+}
+//vertical-form
+
+
+//stars
+.stars{
+
+}
+
+.stars__title{
+	font-size: 20px;
+	margin-bottom: 5px;
+	line-height: 1.2;
+}
+//stars
+
+
+.form-note{
+	line-height: 1.2;
+	margin-top: 20px;
+}

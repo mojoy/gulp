@@ -1,0 +1,99 @@
+
+
+
+.vwb {
+
+	&-wrapper {
+		position: fixed;
+		background-color: white;
+		z-index: 200;
+		transition: all .5s;
+		overflow: hidden;
+		cursor: pointer;
+		opacity: .9;
+
+		border-radius: 15px;
+		border: 2px solid white;
+		left: 3%;
+		bottom: 10%;
+		width: 150px;
+		height: 280px;
+
+		&:hover {
+			opacity: 1;
+			border: 2px solid #239ca3;
+
+			.vwb-close-btn {
+				opacity: 1;
+			}
+		}
+
+		&--play {
+			width: 300px;
+			height: 560px;
+			opacity: 1;
+
+			.vwb-close-btn {
+
+			}
+		}
+	}
+
+	&-video {
+		position: absolute;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		font-family: Helvetica, Arial, sans-serif !important;
+
+
+		&:hover::-webkit-media-controls {
+			display: none !important;
+		}
+	}
+
+	&-close-btn {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background: white;
+		width: 17px;
+		height: 17px;
+		border-radius: 100%;
+		cursor: pointer;
+		transition: opacity .3s;
+
+		opacity: 0;
+		display: flex;
+		align-content: center;
+
+		svg {
+			object-fit: contain;
+		}
+	}
+
+	&-btn-wrapper {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 5%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

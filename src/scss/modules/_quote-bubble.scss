@@ -1,0 +1,64 @@
+.quote-bubble{
+	position: relative;
+	background: #FFF;
+	box-shadow: $shadow-panels;
+	border-radius: 15px;
+	padding: 50px 80px 50px 150px;
+	font-style: italic;
+	font-size: 18px;
+	margin-right: 30px;
+	@include res(l){
+		padding: 30px 30px 30px 100px;
+		font-size: 16px;
+	}
+	@include res(xs){
+		padding: 65px 15px 20px 15px;
+		margin-right: 0;
+	}
+
+	&:before{
+		content: '';
+		width: 65px;
+		height: 50px;
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: contain;
+		position: absolute;
+		top: 55px;
+		left: 50px;
+		@include res(l){
+			width: 40px;
+			left: 30px;
+			top: 35px;
+		}
+		@include res(xs){
+			top: 20px;
+			left: 15px;
+		}
+	}
+
+	&:after{
+		content: '';
+		width: 60px;
+		height: 31px;
+		background: url("../img/about-work/bubble-arrow.svg") center top no-repeat;
+		position: absolute;
+		bottom: 0;
+		right: -30px;
+		@include res(xs){
+			display: none;
+		}
+	}
+}
+
+.quote-bubble--green{
+	&:before{
+		background-image: url("../img/blocks/quote-green.svg");
+	}
+}
+
+.quote-bubble--red{
+	&:before{
+		background-image: url("../img/blocks/quote-red.svg");
+	}
+}

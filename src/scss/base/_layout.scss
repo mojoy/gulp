@@ -1,0 +1,105 @@
+.s-header-title{
+	text-align: center;
+	padding-top: 70px;
+	@include res(l){
+		padding-top: 40px;
+	}
+	
+	&--left{
+		text-align: left;
+	}
+}
+
+
+.s-def{
+	padding: 40px 0;
+}
+
+.s-def-bottom{
+	padding-bottom: 40px;
+}
+
+.s-def-bottom-double{
+	padding-bottom: 80px;
+	@include res(xs){
+		padding-bottom: 60px;
+	}
+
+	&+.s-full-banner{
+		@include res(m){
+			padding-top: 0;
+		}
+	}
+}
+
+.s-def-top{
+	padding-top: 40px;
+}
+
+.s-def-top-double{
+	padding-top: 80px;
+	@include res(xs){
+		padding-top: 60px;
+	}
+}
+
+.s-def-small{
+	padding: 15px 0;
+}
+
+.s-def-double{
+	padding: 80px 0;
+	@include res(xs){
+		padding: 60px 0;
+	}
+}
+
+//two-col
+.two-col{
+	display: flex;
+	align-items: stretch;
+	@include res(l){
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.two-col__main{
+	display: block;
+	flex: 1;
+	margin-right: 30px;
+	@include res(l){
+		width: 100%;
+		margin-bottom: 40px;
+		margin-right: 0;
+		flex: 0 0 auto;
+	}
+}
+
+.two-col__aside{
+	display: block;
+	width: 300px;
+	flex-shrink: 0;
+	@include res(l){
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+//two-col
+
+
+//s-border
+.s-border{
+	border-top: 1px solid rgba($icons-gray-blue,0.5);
+	border-bottom: 1px solid rgba($icons-gray-blue,0.5);
+}
+
+.s-border-top{
+	border-top: 1px solid rgba($icons-gray-blue,0.5);
+}
+
+.s-border-bottom{
+	border-bottom: 1px solid rgba($icons-gray-blue,0.5);
+}
+//s-border

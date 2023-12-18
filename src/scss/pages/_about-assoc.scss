@@ -1,0 +1,22 @@
+//assoc-slider
+.assoc-slider{
+
+	.slider-arrow--prev{
+		left: 12px;
+	}
+
+	.slider-arrow--next{
+		right: 12px;
+	}
+
+	.swiper-slide{
+		padding: 0 10px;
+
+		img{
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+//assoc-slider

@@ -1,0 +1,35 @@
+.pb .mob-panel {
+
+
+   &__connect {
+      display: flex;
+      margin: 0 0 15px;
+      flex-wrap: wrap;
+   }
+
+   .mob-panel__connect .main-nav-callback__btn {
+      padding: 0 30px 0 15px;
+   }
+
+   .main-nav-callback__send {
+      margin: 0 0 0 auto;
+      border: 1px solid #fff;
+
+      svg {
+         .st0{fill:#fff;}
+         .st1{fill:#fff;}
+         .st2{stroke:#fff;}
+         .st3{stroke:#fff;}
+      }
+   }
+
+   .main-nav-callback__pay {
+      margin: 0 15px 0 auto;
+      border: 1px solid #fff;
+
+      svg {
+         stroke: #fff;
+      }
+
+   }
+}

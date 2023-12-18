@@ -1,0 +1,161 @@
+.head-slider{
+	border-bottom: 4px solid $pink;
+	background: $green;
+	@include res(s){
+		background: $bg-color;
+		border-bottom: none;
+	}
+
+	&.swiper-container-horizontal > .swiper-pagination-bullets{
+		@include res(s){
+			bottom: initial;
+			top: 10px;
+			left: 10px;
+			text-align: left;
+		}
+	}
+}
+
+.head-slide{
+	height: calc(100vw / 2.84);
+	@include res(l){
+		height: auto;
+		overflow: hidden;
+	}
+}
+
+.head-slide__bg{
+	display: block;
+	position: relative;
+	z-index: 1;
+	@include res(s){
+		border-bottom: 4px solid $pink;
+	}
+
+	img{
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		@include res(s){
+			width: 150%;
+			left: -50%;
+		}
+	}
+}
+
+.head-slide__container{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	pointer-events: none;
+	@include res(s){
+		margin-top: -20px;
+		margin-bottom: 10px;
+		position: relative;
+	}
+}
+
+.head-slide__content{
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	pointer-events: all;
+	@include res(s){
+		background: #FFF;
+		border-radius: 10px;
+		box-shadow: $shadow-block;
+		width: 100%;
+		padding: 15px;
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+.head-slide__title{
+	color: #FFF;
+	font-size: 2.8vw;
+	line-height: 1;
+	margin-bottom: 0.2em;
+	@include res(xl){
+		font-size: 30px;
+		margin-bottom: 10px;
+	}
+	@include res(s){
+		font-size: 20px;
+		color: $black;
+
+		br{
+			display: none;
+		}
+	}
+}
+
+.head-slide__descr{
+	color: #FFF;
+	font-size: 1.3vw;
+	line-height: 1.2;
+	margin-bottom: 0.8em;
+	@include res(xl){
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	@include res(l){
+		display: none;
+	}
+
+	mark{
+		display: inline-block;
+		text-transform: uppercase;
+		background: $pink;
+		color: #FFF;
+		padding: 0.1em 0.3em;
+		border-radius: 4px;
+	}
+}
+
+.head-slide__list{
+	@include res(l){
+		display: none;
+	}
+
+	li{
+		font-size: 1vw;
+		@include res(xl){
+			font-size: 14px;
+		}
+	}
+}
+
+.head-slide__btn{
+	margin-top: 30px;
+	@include res(xl){
+		margin-top: 20px;
+	}
+	@include res(s){
+		margin-top: 0;
+		font-size: 12px;
+		padding: 9px 14px 7px;
+	}
+}
+
+.head-slide__logos{
+	display: block;
+	margin-bottom: 10px;
+	width: 24vw;
+	max-width: 432px;
+	@include res(l){
+		width: 216px;
+	}
+	@include res(s){
+		display: none;
+	}
+}

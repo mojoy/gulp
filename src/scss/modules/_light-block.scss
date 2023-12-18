@@ -1,0 +1,60 @@
+.light-block{
+	display: flex;
+	align-items: center;
+	border: 7px solid #FFF;
+	border-radius: 10px;
+	box-shadow: $shadow-panels;
+	background-color: #E1F7F9;
+	background-image: url(../img/about-work/light-block-bg.webp);
+	background-position: left center;
+	background-repeat: no-repeat;
+	@include res(m){
+		flex-direction: column-reverse;
+	}
+
+	&--gray{
+		background-color: $bg-color;
+	}
+}
+
+.light-block__left{
+	align-self: flex-end;
+	width: 35%;
+	flex-shrink: 0;
+	padding-top: 20px;
+	@include res(m){
+		width: 100%;
+		align-self: center;
+		padding-top: 0;
+	}
+}
+
+.light-block__img{
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	@include res(m){
+		max-height: 200px;
+	}
+}
+
+.light-block__content{
+	width: 65%;
+	flex-shrink: 0;
+	padding: 30px;
+	@include res(m){
+		width: 100%;
+		padding: 20px 30px;
+	}
+	@include res(xs){
+		padding: 15px;
+	}
+
+	.button{
+		margin-top: 20px;
+		@include res(xs){
+			margin-top: 0;
+		}
+	}
+}

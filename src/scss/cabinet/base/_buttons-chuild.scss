@@ -1,0 +1,157 @@
+
+.button {
+	&--big {
+		padding: 18px 35px;
+		font-size: 18px;
+
+		@include res(l){
+			padding: 15px 30px;
+			font-size: 18px;
+
+		}
+		@include res(xs){
+			font-size: 16px;
+		}
+	}
+}
+
+
+
+.button-green {
+	background: linear-gradient(to bottom, #72dbd4, #239ca3);
+	border: 1px solid #72dbd4;
+	box-shadow:  0 3px 0 0 #239ca3;
+	text-shadow: 0 1px 1px #239ca3;
+
+	&:focus {
+		background: linear-gradient(to bottom, #72dbd4, #239ca3);
+	}
+	&:hover{
+		background: linear-gradient(to bottom, #72dbd4, #239ca3);
+		box-shadow:  0 5px 0 0 #247b80;
+	}
+	&:active{
+		background: linear-gradient(to bottom, #72dbd4, #239ca3);
+		box-shadow:  0 1px 0 0 #247b80;
+	}
+}
+
+
+.button-add {
+
+	width: 38px;
+	height: 38px;
+	padding: 0;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	box-shadow: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+
+	&:after {
+		width: 4px;
+		height: 14px;
+		position: absolute;
+		content: "";
+		left: 50%;
+		top: 50%;
+		background: #fff;
+		margin: -7px 0 0 -2px;
+	}
+
+	&:before {
+		width: 14px;
+		height: 4px;
+		position: absolute;
+		content: "";
+		left: 50%;
+		top: 50%;
+		background: #fff;
+		margin: -2px 0 0 -7px;
+		min-width: auto;
+		right: auto;
+		border-radius: 0;
+		transition: none;
+	}
+
+	&:hover {
+
+	}
+
+
+	&:focus:before,
+	&:hover:before,
+	&:active:before {
+		transform: scale3d(1,1,1);
+	}
+
+}
+
+.button-remove {
+	width: 38px;
+	height: 38px;
+	padding: 0;
+	margin-bottom: 10px;
+	border-radius: 7px;
+	box-shadow: none;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #F9788C;
+
+	&:before {
+		width: 14px;
+		height: 4px;
+		position: absolute;
+		content: "";
+		left: 50%;
+		top: 50%;
+		background: #fff;
+		margin: -2px 0 0 -7px;
+		min-width: auto;
+		right: auto;
+		border-radius: 0;
+		transition: none;
+	}
+
+	&:hover {
+		box-shadow: 0 5px 0 0 #8E0132;
+	}
+
+	&:active {
+		box-shadow: 0 1px 0 0 #8E0132;
+	}
+
+	&:focus:before,
+	&:hover:before,
+	&:active:before {
+		transform: scale3d(1,1,1);
+	}
+}
+
+
+.btn-holder {
+
+	padding: 5px 0;
+	display: flex;
+	margin: 0 0 10px;
+	flex-wrap: wrap;
+
+	.button {
+		margin: 0 10px 15px;
+	}
+
+	&-top {
+		margin: 0 0 25px;
+		align-items: flex-end;
+		justify-content: flex-end;
+
+		@include res(m){
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+
