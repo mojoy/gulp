@@ -2,7 +2,6 @@ import * as flsFunctions from "./modules/functions.js"
 
 flsFunctions.isWebp();
 
-
 import { Navigation, Pagination } from 'swiper/modules';
 
 function sliderArrow() {
@@ -23,9 +22,6 @@ function sliderArrow() {
 }
 
 sliderArrow()
-
-console.log('test15');
-///vdsvasvsd
 
 
 
