@@ -3,5 +3,5 @@
 /mytest.zip
 /.vscode
 /.idea
-gulp/config/ftp.js
-gulp/config/ftp.js
+/gulp/config/ftp.js
+/dist
