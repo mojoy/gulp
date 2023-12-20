@@ -18,6 +18,7 @@ import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/sass.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
+import { videos } from "./gulp/tasks/videos.js";
 import { otfToTtf, ttfToWoff, ttfToWoff2, fontsStyle } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
@@ -28,10 +29,11 @@ function watcher() {
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
+  gulp.watch(path.watch.videos, videos);
 }
 
 // последовательная обработка шрифтов
-const fonts = gulp.series(otfToTtf, ttfToWoff, ttfToWoff2, fontsStyle);
+const fonts = gulp.series(otfToTtf, ttfToWoff, ttfToWoff2, fontsStyle, videos);
 
 // основные задачи
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));

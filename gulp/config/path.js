@@ -12,6 +12,7 @@ export const path = {
         html: `${buildFolder}/`,
         images: `${buildFolder}/img/`,
         fonts: `${buildFolder}/fonts/`,
+        videos: `${buildFolder}/video/`,
         files: `${buildFolder}/files/`
     },
     src: {
@@ -20,7 +21,8 @@ export const path = {
         html: `${srcFolder}/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
         svg: `${srcFolder}/img/**/*.svg`,
-        //fonts: `${srcFolder}/fonts/`,
+        //fonts: `${srcFolder}/fonts/**/*.*`,
+        videos: `${srcFolder}/video/**/*.*`,
         files: `${srcFolder}/files/**/*.*`,
     },
     watch: {
@@ -28,7 +30,8 @@ export const path = {
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.html`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp,ico,webp}`,
-        //fonts: `${srcFolder}/fonts/`,
+        //fonts: `${srcFolder}/fonts/**/*.*`,
+        videos: `${srcFolder}/video/**/*.*`,
         files: `${srcFolder}/files/**/*.*`,
     }, // за какими папками надо следить
     clean: buildFolder,
